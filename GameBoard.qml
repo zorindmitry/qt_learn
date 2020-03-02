@@ -2,13 +2,16 @@
 
 GridView {
     id: root
-    model: 16
+    model: TilesModel
+    {
+
+    }
 
     cellHeight: height/4
     cellWidth: width/4
 
     delegate: Tile {
-
+        displayText: display
         height: root.cellHeight
         width: root.cellWidth
 
